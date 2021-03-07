@@ -1,7 +1,16 @@
-TypeScript Jest Demo
+TypeScript Jest Spy On Mobx Computed Field Demo
 ===========================
 
-使用typescript就需要在`jest.config.js`中使用`ts-jest`作为`preset`
+直接使用`jest.spyOn`来mock一个computed field, 会得到以下错误：
+
+```
+doubleValue is not declared configurable
+```
+
+需要按这里做法，进行设置：
+
+https://github.com/mobxjs/mobx/issues/1867#issuecomment-518987737
+
 
 ```
 npm install
